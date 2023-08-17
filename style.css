@@ -23,16 +23,6 @@ video{
     z-index: -1;
 }
 
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    font-size: 60px;
-    color: white;
-    cursor: pointer;
-}
 
 .container{
    padding: 10px 7.5%;
