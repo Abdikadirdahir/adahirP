@@ -25,10 +25,13 @@
             <h1> Hi, Im <spam>Abdi</spam> <br> From San Diego</h1>
         </div>
     </div>
-    <video autoplay loop muted>
+    <video id="autoplayVideo" loop muted>
         <source src="Images/transport_-_23232 (1440p).mp4" type="video/mp4">
         <!-- Add more video formats for cross-browser compatibility if needed -->
     </video>
+    <div id="playButton" class="play-button">
+        <i class="fas fa-play"></i>
+    </div>
 </div>
   </div> 
 
@@ -203,6 +206,14 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    const video = document.getElementById('autoplayVideo');
+const playButton = document.getElementById('playButton');
+
+playButton.addEventListener('click', () => {
+    video.play();
+    playButton.style.display = 'none'; // Hide the play button after clicking
+});
   </script>
 </body>
 </html>
